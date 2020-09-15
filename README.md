@@ -13,3 +13,6 @@
 
 *p.s. Github我也不太会用, 如有任何问题可以联系 11810405@mail.sustech.edu.cn 谢谢!*
 
+> 致谢：*https://github.com/SUSTC/sustech-slides 提供结构参考*
+>
+> ​            B站up：joefsong提供疑难解惑
