@@ -1,0 +1,36 @@
+\ProvidesPackage{SME-theme}
+\usetheme{Szeged}
+%设置headline格式
+\useoutertheme[headline]{smoothbars}
+\setbeamercolor{section in head/foot}{fg=sme}
+\setbeamertemplate{section in head/foot shaded}{\color{szeged}\usebeamertemplate{section in head/foot}}
+%设置字体
+\usepackage{txfonts}
+\usefonttheme{serif}
+\setbeamerfont{title}{size=\huge}
+\setbeamerfont{headline}{size=\scriptsize}
+\setbeamerfont{frametitle}{size=\large}
+\setbeamerfont{institute}{size=\normalsize}
+\setbeamerfont{date}{size=\scriptsize}
+\setbeamercolor{normal text}{fg=sme}
+\setbeamercolor{alerted text}{fg=sust-orange}
+%设置Logo
+\pgfdeclareimage[width=3cm]{sme}{logo/SME-logo.png}
+\logo{\pgfuseimage{sme}\hspace{0.3cm}}
+%自定义footline
+\setbeamercolor{frametitle}{bg=sme!80,fg=white}
+\setbeamercolor{section in toc}{fg=sme,bg=white}
+\setbeamercolor{subsection in toc}{fg=sme!70,bg=white}
+\setbeamertemplate{footline}{
+	\hbox{%
+		\begin{beamercolorbox}[wd=0.3333\paperwidth,ht=2.5ex,dp=1.125ex,leftskip=1cm,rightskip=0.3cm,center]{bluewhite}
+			\insertshortauthor
+		\end{beamercolorbox}%
+		\begin{beamercolorbox}[wd=0.3333\paperwidth,ht=2.5ex,dp=1.125ex,leftskip=1.5cm,rightskip=0cm,center]{whiteblue}
+			\insertframenumber\,/\,\inserttotalframenumber
+		\end{beamercolorbox}%
+		\begin{beamercolorbox}[wd=0.3333\paperwidth,ht=2.5ex,dp=1.125ex,leftskip=0.1cm,rightskip=0.1cm,center]{bluewhite}
+			\insertshortinstitute
+		\end{beamercolorbox}
+	}
+}

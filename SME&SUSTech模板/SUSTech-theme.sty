@@ -1,0 +1,39 @@
+\ProvidesPackage{SUSTech-theme}
+\usetheme{Szeged}
+%设置headline格式
+\useoutertheme{smoothbars}
+\setbeamercolor{section in head/foot}{fg=sust-orange}
+\setbeamertemplate{section in head/foot shaded}{\color{sust-orange!30}\usebeamertemplate{section in head/foot}}
+%设置字体
+\usepackage{txfonts}
+\usefonttheme{serif}
+\setbeamerfont{title}{size=\huge}
+\setbeamerfont{headline}{size=\scriptsize}
+\setbeamerfont{frametitle}{size=\large}
+\setbeamerfont{institute}{size=\normalsize}
+\setbeamerfont{date}{size=\scriptsize}
+\setbeamercolor{normal text}{fg=sme}
+\setbeamercolor{alerted text}{fg=sust-orange}
+\setbeamercolor{title}{fg=sme}
+\setbeamercolor{subsection in head/foot}{fg=sme}
+\setbeamerfont{subsection in head/foot}{size=\large}
+%设置Logo
+\pgfdeclareimage[width=3.5cm]{SUST}{logo/SUSTech-logo.png}
+\logo{\pgfuseimage{SUST}\hspace{0.3cm}}
+%自定义footline
+\setbeamercolor{frametitle}{bg=sust-orange!80,fg=white}
+\setbeamercolor{section in toc}{fg=sme,bg=sust-orange}
+\setbeamercolor{subsection in toc}{fg=sme!70,bg=white}
+\setbeamertemplate{footline}{
+	\hbox{%
+		\begin{beamercolorbox}[wd=0.3333\paperwidth,ht=2.5ex,dp=1.125ex,leftskip=1cm,rightskip=0.3cm,center]{orangeblue}
+			\insertshortauthor
+		\end{beamercolorbox}%
+		\begin{beamercolorbox}[wd=0.3333\paperwidth,ht=2.5ex,dp=1.125ex,leftskip=1.5cm,rightskip=0cm,center]{whiteblue}
+			\insertframenumber\,/\,\inserttotalframenumber
+		\end{beamercolorbox}%
+		\begin{beamercolorbox}[wd=0.3333\paperwidth,ht=2.5ex,dp=1.125ex,leftskip=0.1cm,rightskip=0.1cm,center]{orangeblue}
+			\insertshortinstitute
+		\end{beamercolorbox}
+	}
+}
