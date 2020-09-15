@@ -16,3 +16,6 @@
 > 致谢：*https://github.com/SUSTC/sustech-slides 提供结构参考*
 >
 > ​            B站up：joefsong提供疑难解惑
+
+*p.s.排版内容用到的paper是这个* ***All-Elastomer-Based Triboelectric Nanogenerator as a Keyboard Cover To Harvest Typing Energy***
+
